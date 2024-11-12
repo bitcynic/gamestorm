@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "gamestorm-api"
+version = "0.1.0"
+description = "GameStorm is a subscription-based gaming platform using Bitcoin Lightning Network"
+authors = ["Antonio <bitcynic@protonmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.115.4"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+sqlalchemy = "^2.0.36"
+alembic = "^1.14.0"
+pydantic = "^2.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
